@@ -27,10 +27,12 @@ export default function BlogPostsPage({ classes }) {
       <div className={classes.main}>
         <div className={classes.container}>
           <SectionPills />
-          <SectionInterested />
+          {/* <SectionInterested /> */}
         </div>
+        {/*
         <SectionImage />
         <SubscribeLine />
+        */}
       </div>
     </div>
   );
