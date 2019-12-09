@@ -49,12 +49,15 @@ export default function ContactUsPage({ classes }) {
                   <br />
                   <br />
                 </p>
-                <form>
+                <form method="POST" data-netlify="true" name="contact">
                   <CustomInput
                     labelText="Your Name"
                     id="float"
                     formControlProps={{
                       fullWidth: true
+                    }}
+                    inputProps={{
+                      name: "name"
                     }}
                   />
                   <CustomInput
@@ -63,12 +66,20 @@ export default function ContactUsPage({ classes }) {
                     formControlProps={{
                       fullWidth: true
                     }}
+                    inputProps={{
+                      name: "email",
+                      type: "email"
+                    }}
                   />
                   <CustomInput
                     labelText="Phone"
                     id="float"
                     formControlProps={{
                       fullWidth: true
+                    }}
+                    inputProps={{
+                      name: "phone",
+                      type: "tel"
                     }}
                   />
                   <CustomInput
@@ -79,11 +90,12 @@ export default function ContactUsPage({ classes }) {
                     }}
                     inputProps={{
                       multiline: true,
-                      rows: 6
+                      rows: 6,
+                      name: "message"
                     }}
                   />
                   <div className={classes.textCenter}>
-                    <Button color="primary" round>
+                    <Button type="submit" color="primary" round>
                       Contact us
                     </Button>
                   </div>
