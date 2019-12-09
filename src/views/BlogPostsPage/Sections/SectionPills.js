@@ -24,6 +24,7 @@ export default function SectionPills() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
+      {/*
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8} className={classes.textCenter}>
           <NavPills
@@ -54,6 +55,7 @@ export default function SectionPills() {
           <div className={classes.tabSpace} />
         </GridItem>
       </GridContainer>
+      */}
       <GridContainer>
         <GridItem xs={12} sm={6} md={6}>
           <Card

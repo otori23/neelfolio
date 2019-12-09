@@ -26,7 +26,7 @@ export default ({ classes, children, ...rest }) => {
         fixed
         changeColorOnScroll={{
           height: 300,
-          color: "info"
+          color: "dark"
         }}
         {...rest}
       />
