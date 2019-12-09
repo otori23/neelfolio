@@ -49,7 +49,7 @@ export default function ContactUsPage({ classes }) {
                   <br />
                   <br />
                 </p>
-                <form method="POST" data-netlify="true" name="contact-form">
+                <form method="POST" data-netlify-recaptcha="true" data-netlify="true" name="contact-form">
                   <input type="hidden" name="form-name" value="contact-form" />
                   <CustomInput
                     labelText="Your Name"
@@ -95,6 +95,7 @@ export default function ContactUsPage({ classes }) {
                       name: "message"
                     }}
                   />
+                  <div data-netlify-recaptcha="true"></div>
                   <div className={classes.textCenter}>
                     <Button type="submit" color="primary" round>
                       Contact us
