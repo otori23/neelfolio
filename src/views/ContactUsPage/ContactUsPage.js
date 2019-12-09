@@ -50,6 +50,7 @@ export default function ContactUsPage({ classes }) {
                   <br />
                 </p>
                 <form method="POST" data-netlify="true" name="contact">
+                  <input type="hidden" name="form-name" value="contact-form" />
                   <CustomInput
                     labelText="Your Name"
                     id="float"
