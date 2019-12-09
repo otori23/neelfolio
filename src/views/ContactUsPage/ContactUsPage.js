@@ -49,7 +49,7 @@ export default function ContactUsPage({ classes }) {
                   <br />
                   <br />
                 </p>
-                <form method="POST" data-netlify="true" name="contact">
+                <form method="POST" data-netlify="true" name="contact-form">
                   <input type="hidden" name="form-name" value="contact-form" />
                   <CustomInput
                     labelText="Your Name"
