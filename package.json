@@ -25,7 +25,7 @@
     "animate.css": "3.7.2",
     "classnames": "2.2.6",
     "core-js": "^2.6.5",
-    "gatsby": "^2.18.7",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-manifest": "^2.0.22",
     "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-offline": "^2.0.24",
